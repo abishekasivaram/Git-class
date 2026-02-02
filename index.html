@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northview College Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo-section">
+        <img src="logo.png" alt="College Logo" class="logo">
+        <h1>Northview College</h1>
+    </div>
+
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Admissions</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search by title or date...">
+    </div>
+</header>
+
+<!-- FILTERS -->
+<section class="filters">
+    <select id="categoryFilter">
+        <option value="All">All Categories</option>
+        <option value="Sports">Sports</option>
+        <option value="Workshops">Workshops</option>
+        <option value="Guest Lecture">Guest Lecture</option>
+    </select>
+
+    <input type="date" id="startDate">
+    <input type="date" id="endDate">
+</section>
+
+<!-- EVENTS -->
+<section id="eventsContainer" class="events"></section>
+
+<!-- PAGINATION -->
+<div class="pagination">
+    <button id="prevPage">Previous</button>
+    <span id="pageNumber">1</span>
+    <button id="nextPage">Next</button>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="socials">
+        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+    </div>
+    <p>📞 +91 98765 43210 | ✉ info@northviewcollege.edu</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
